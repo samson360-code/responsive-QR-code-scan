@@ -6,44 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR code</title>
     <style>
-        body {
-            background-color: rgb(207, 222, 227);
+         .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-top: 2rem;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      body{
+        background-color: rgb(207, 222, 227);
+
+
+      }
+        main{
+            height: 90vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 95vh;
-
+            margin: 0;
+            padding: 0;
         }
         section {
-            margin:40%;
+            width: 355PX;
             background-color: white;
             border-radius: 14px;
-        }
-        .img_holder {
-            padding: 5%;
-        }
-        img {
-            width: 100%;
-            border-radius: 14px;
-        }
-        .text{
-            margin: 8% 3%;
-        }
-       div p:first-of-type{
-            font-size:xx-large;
-            font-weight: bolder;
+            padding: 1rem;
             text-align: center;
         }
-        div p:last-of-type{
-            font-size:X-large;
-           text-align: center;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        section>* {
+            margin: 1rem auto;
         }
-        @media ( max-width:1400px){
+
+        p {
+            font-size: 16px;
+        }
+
+        img {
+            margin-top: 0;
+            max-width: 100%;
+            border-radius: 14px;
+        }
+        @media (max-width:1400px) {
             section {
-            margin:  5%;
-           
-        }
+                margin: 5%;
+
+            }
         }
     </style>
 
@@ -53,17 +62,26 @@
 </head>
 
 <body>
+    <main>
     <section>
-        <div>
-            <div class="img_holder"><img src="image-qr-code.png "></div>
-            <div class="text">
-                <p>improve your-front-endskills by building projects</p>
-                <p>scan the QR code to visit front-end mentor and take your coding skill to next level</p>
-            </div>
+        
+            <img src="images/image-qr-code.png ">
+        
+        <h1>improve your-front-endskills by building projects</h1>
+        <p>scan the QR code to visit front-end mentor and take your coding skill to next level</p>
+
 
 
         </div>
     </section>
+   
+    </main>
+    <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/samson360-code"> samson mamuye</a>.
+      </div>
 </body>
 
 </html>
